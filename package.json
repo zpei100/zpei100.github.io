@@ -1,0 +1,35 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -w",
+    "sass": "sass --watch src/client/css/styles.scss:dist/styles.css",
+    "server": "nodemon src/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpei100/zpei100.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpei100/zpei100.github.io/issues"
+  },
+  "homepage": "https://github.com/zpei100/zpei100.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.2.1"
+  }
+}
