@@ -1,0 +1,16 @@
+@import 'variables';
+
+#work {
+  right: 0;
+  height: 100%;
+  padding: 40px 40px;
+  background: $work-color;
+  animation: flip-out 0.7s ease forwards;
+  visibility: hidden;
+  transform-origin: 50% 50%;
+}
+
+@keyframes flip-out {
+  0% {transform: rotateY(-270deg) scale(0.5); visibility: visible}
+  100% {transform: rotateY(0deg) scale(1); visibility: visible}
+}

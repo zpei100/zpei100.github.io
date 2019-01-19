@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'intro';
+@import 'project';
+@import 'work';
+
+#main-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  position: relative;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.circle {
+  border: 2px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  height: $circle-image-size;
+  width: $circle-image-size;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

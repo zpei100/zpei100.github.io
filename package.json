@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack -w",
-    "sass": "sass --watch src/client/css/styles.scss:dist/styles.css",
+    "sass": "sass --watch src/client/css/critical.scss:dist/styles.css src/client/css/main.scss:dist/main.css",
     "server": "nodemon src/server/index.js"
   },
   "repository": {
@@ -21,14 +21,22 @@
   "homepage": "https://github.com/zpei100/zpei100.github.io#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "jquery": "^3.3.1",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "style-loader": "^0.23.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^3.2.1"
   }

@@ -1,0 +1,70 @@
+@import 'variables';
+
+body {
+  background: #495F69;
+  margin: 0;
+  font-family: Helvetica, Arial;
+}
+
+#greeting {
+  width: 700px;
+  left: calc(50vw - 350px);
+  background: #C8E5EE;
+  height: $greeting-card-height;
+  position: absolute;
+  
+  animation: 
+    drop $greeting-card-drop-duration ease-in forwards, 
+    bounce 0.4s $greeting-card-drop-duration ease-out forwards,
+    drop-second 0.4s ($greeting-card-drop-duration + 0.4s) ease-in forwards,
+    bounce-second 0.15s ($greeting-card-drop-duration + 0.8s) ease-out forwards,
+    drop-last 0.15s ($greeting-card-drop-duration + 0.95s) ease-in forwards;
+
+  div {
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+    }
+  }
+
+  header {
+    font-weight: 800;
+    font-size: 50px;
+    margin: 20px 0px;
+    text-align: center;
+  }
+
+  p {
+    margin: 20px 0px;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+@keyframes drop {
+  0% {top: -#{$greeting-card-height}; opacity: 0}
+  100% {top: $greeting-card-bottom-height; opacity: 1}
+}
+
+@keyframes bounce {
+  0% {top: $greeting-card-bottom-height;}
+  100% {top: calc(#{$greeting-card-bottom-height} - 130px);}
+}
+
+@keyframes drop-second {
+  0% {top: calc(#{$greeting-card-bottom-height} - 130px)}
+  100% {top: $greeting-card-bottom-height}
+}
+
+@keyframes bounce-second {
+  0% {top: $greeting-card-bottom-height}
+  100% {top: calc(#{$greeting-card-bottom-height} - 50px)}
+}
+
+@keyframes drop-last {
+  0% {top: calc(#{$greeting-card-bottom-height} - 50px)}
+  100% {top: $greeting-card-bottom-height}
+}
