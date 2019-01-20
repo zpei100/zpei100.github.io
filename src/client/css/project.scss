@@ -3,8 +3,29 @@
 .project {
   padding: 15px 0;
   display: flex;
-}
+  
+  .info {
+    width: 60%;
+  }
 
-.slick-slider {
-  width: 250px
+  .carousel {
+    width: 40%;
+    display: flex;
+  
+    .slider {
+      width: 250px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    button {
+      background: lighten(green, 7);
+      border: none;
+      height: 100%;
+      padding: 0;
+      width: 30px;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
 }

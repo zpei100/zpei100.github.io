@@ -25,15 +25,6 @@
   margin-bottom: 0;
 }
 
-.project {
-  padding: 15px 0;
-  display: flex;
-}
-
-.slick-slider {
-  width: 500px;
-}
-
 #work {
   right: 0;
   height: 100%;
@@ -77,6 +68,39 @@
 .circle img {
   width: 100%;
   height: 100%;
+}
+
+/* Projects */
+.project {
+  padding: 15px 0;
+  display: flex;
+}
+.project .info {
+  width: 60%;
+}
+.project .carousel {
+  width: 40%;
+  display: flex;
+}
+.project .carousel .slide-container {
+  width: 250px;
+  overflow: hidden;
+  padding: 0;
+}
+.project .carousel .slider {
+  width: 250px;
+  display: flex;
+}
+.project .carousel .slider img:first-child {
+  margin-left: -250px;
+}
+.project .carousel button {
+  background: #00a400;
+  border: none;
+  padding: 0;
+  width: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
